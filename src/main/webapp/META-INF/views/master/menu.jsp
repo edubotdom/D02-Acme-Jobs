@@ -28,6 +28,11 @@
 			
 		</acme:menu-option>
 		
+		<!-- Announcements -->
+		<acme:menu-option code="master.menu.anonymous.announcements" action="/anonymous/announcement/list" access="isAnonymous()"/>
+		<acme:menu-option code="master.menu.authenticated.announcements" action="/authenticated/announcement/list" access="isAuthenticated()"/>
+		<acme:menu-option code="master.menu.administrator.announcements" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
+		
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
