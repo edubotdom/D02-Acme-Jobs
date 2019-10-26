@@ -26,7 +26,8 @@ public interface AuthenticatedAnnouncementRepository extends AbstractRepository 
 	@Query("select a from Announcement a where a.id = ?1")
 	Announcement findOneById(int id);
 
-	@Query("select a from Announcement a")
+	//@Query("select a from Announcement a")
+	@Query("select a from Announcement a where current_timestamp() - a.moment < 30000000")
 	Collection<Announcement> findManyAll();
 
 }
