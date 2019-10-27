@@ -73,5 +73,28 @@
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is a description of a very old announcement"/>
 	</bean>	
+	
+<!-- Investor record's beans-->
 
+	<bean id="investor_record01" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Edu Mig"/>
+		<property name="sector" value="Sector 1"/>
+		<property name="investing_statement" value="129.23"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="investor_record02" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Juanogtir"/>
+		<property name="sector" value="Sector 2"/>
+		<property name="investing_statement" value="123801.23"/>
+		<property name="stars" value="0"/>
+	</bean>
+	
+	<bean id="investor_record03" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Danaremar"/>
+		<property name="sector" value="Sector 3"/>
+		<property name="investing_statement" value="129343.23"/>
+		<property name="stars"> <null/></property>
+	</bean>
+	
 </beans>
