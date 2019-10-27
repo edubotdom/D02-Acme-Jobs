@@ -28,10 +28,17 @@
 			
 		</acme:menu-option>
 		
+    <!-- Investor records -->
+		<acme:menu-option code="master.menu.authenticated.investor_record" action="/authenticated/investor_record/list" access="isAuthenticated()" >
+		</acme:menu-option>
+		<acme:menu-option code="master.menu.anonymous.investor_record" action="/anonymous/investor_record/list" access="isAnonymous()" >
+		</acme:menu-option>
+
 		<!-- Announcements -->
 		<acme:menu-option code="master.menu.anonymous.announcements" action="/anonymous/announcement/list" access="isAnonymous()"/>
 		<acme:menu-option code="master.menu.authenticated.announcements" action="/authenticated/announcement/list" access="isAuthenticated()"/>
 		<acme:menu-option code="master.menu.administrator.announcements" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
+
 		
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>

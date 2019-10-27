@@ -41,6 +41,10 @@ master.menu.anonymous.edubotdom-favourite-link = Enlace favorito de edubotdom
 master.menu.anonymous.javvazzam-favourite-link = Enlace favorito de javvazzam
 master.menu.anonymous.danaremar-favourite-link = Enlace favorito de danaremar
 master.menu.anonymous.seraguoro-favourite-link = Enlace favorito de seraguoro
+master.menu.anonymous.investor_record = Registros de inversores
+
+# master.menu.authenticated ###################################################
+master.menu.authenticated.investor_record = Registros de inversores
 
 # master.menu.administrator ###################################################
 
