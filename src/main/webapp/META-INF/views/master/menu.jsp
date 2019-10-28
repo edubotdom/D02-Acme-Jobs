@@ -28,6 +28,14 @@
 			
 		</acme:menu-option>
 		
+    <!-- Requests & offers -->
+    <acme:menu-option code="master.menu.authenticated.acme_request" action="/authenticated/acme_request/list"
+			access="isAuthenticated()" />
+			
+		<acme:menu-option code="master.menu.authenticated.acme_offer" action="/authenticated/acme_offer/list"
+			access="isAuthenticated()" />
+
+    
     <!-- Investor records -->
 		<acme:menu-option code="master.menu.authenticated.investor_record" action="/authenticated/investor_record/list" access="isAuthenticated()" >
 		</acme:menu-option>

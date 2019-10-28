@@ -57,7 +57,6 @@
 		<property name="moment" value="2019/10/10 10:35"/>
 		<property name="moreInfo"><null/></property>
 		<property name="text" value="This is a description of a sample announcement"/>
-		
 	</bean>
 	
 	<bean id="announcement02" class="acme.entities.announcements.Announcement">
@@ -72,6 +71,67 @@
 		<property name="moment" value="1900/10/10 19:10"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is a description of a very old announcement"/>
+	</bean>
+	
+	<!-- Acme_request's beans-->
+
+	<bean id="acme_request01" class="acme.entities.acme_requests.Acme_request">
+		<property name="ticker" value="RAAAA-00000"/>
+		<property name="title" value="Sample request 01"/>
+		<property name="moment" value="2019/06/10 10:35"/>
+		<property name="deadline" value="2019/08/10 10:35"/>
+		<property name="text" value="This is a description of a sample request"/>
+		<property name="reward" value="40.20€"/>
+	</bean>
+	
+	<bean id="acme_request02" class="acme.entities.acme_requests.Acme_request">
+		<property name="ticker" value="RBBBB-00000"/>
+		<property name="title" value="Sample request 02"/>
+		<property name="moment" value="2019/06/10 00:00"/>
+		<property name="deadline" value="2019/10/10 12:00"/>
+		<property name="text" value="This is a description of another request"/>
+		<property name="reward" value="65€"/>
+	</bean>
+	
+	<bean id="acme_request03" class="acme.entities.acme_requests.Acme_request">
+		<property name="ticker" value="RCCCC-00000"/>
+		<property name="title" value="Sample request 03"/>
+		<property name="moment" value="1900/10/10 19:10"/>
+		<property name="deadline" value="1901/10/10 19:10"/>
+		<property name="text" value="This is a description of a very old request"/>
+		<property name="reward" value="100.50€"/>
+	</bean>	
+	
+	<!-- Acme_offer's beans-->
+
+	<bean id="acme_offer01" class="acme.entities.acme_offers.Acme_offer">
+		<property name="ticker" value="OAAAA-00000"/>
+		<property name="title" value="Sample offer 01"/>
+		<property name="moment" value="2019/06/10 10:35"/>
+		<property name="deadline" value="2019/08/10 10:35"/>
+		<property name="text" value="This is a description of a sample offer"/>
+		<property name="min" value="400.20€"/>
+		<property name="max" value="650€"/>
+	</bean>
+	
+	<bean id="acme_offer02" class="acme.entities.acme_offers.Acme_offer">
+		<property name="ticker" value="OBBBB-00000"/>
+		<property name="title" value="Sample offer 02"/>
+		<property name="moment" value="2019/06/10 00:00"/>
+		<property name="deadline" value="2019/10/10 12:00"/>
+		<property name="text" value="This is a description of another offer"/>
+		<property name="min" value="65€"/>
+		<property name="max" value="1000.50€"/>
+	</bean>
+	
+	<bean id="acme_offer03" class="acme.entities.acme_offers.Acme_offer">
+		<property name="ticker" value="OCCCC-00000"/>
+		<property name="title" value="Sample offer 03"/>
+		<property name="moment" value="1900/10/10 19:10"/>
+		<property name="deadline" value="1901/10/10 19:10"/>
+		<property name="text" value="This is a description of a very old offer"/>
+		<property name="min" value="1000.50€"/>
+		<property name="max" value="1300.50€"/>
 	</bean>	
 	
 <!-- Investor record's beans-->

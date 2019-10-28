@@ -46,6 +46,10 @@ master.menu.anonymous.investor_record = Registros de inversores
 # master.menu.authenticated ###################################################
 master.menu.authenticated.investor_record = Registros de inversores
 
+# master.menu.authenticated #######################################################
+master.menu.authenticated.acme_request = Peticiones
+master.menu.authenticated.acme_offer = Ofertas
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

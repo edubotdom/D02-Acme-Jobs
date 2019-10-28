@@ -46,6 +46,10 @@ master.menu.anonymous.investor_record = Investor records
 # master.menu.authenticated ###################################################
 master.menu.authenticated.investor_record = Investor records
 
+# master.menu.authenticated #######################################################
+master.menu.authenticated.acme_request = Requests
+master.menu.authenticated.acme_offer = Offers
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
