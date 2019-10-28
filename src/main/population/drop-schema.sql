@@ -19,6 +19,10 @@
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
 
+    drop table if exists `acme_offer`;
+
+    drop table if exists `acme_request`;
+
     drop table if exists `administrator`;
 
     drop table if exists `announcement`;
@@ -30,6 +34,8 @@
     drop table if exists `company_records`;
 
     drop table if exists `consumer`;
+
+    drop table if exists `investor_record`;
 
     drop table if exists `provider`;
 

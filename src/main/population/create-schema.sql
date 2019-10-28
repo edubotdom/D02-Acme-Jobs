@@ -1,4 +1,32 @@
 
+    create table `acme_offer` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `max_amount` double precision,
+        `max_currency` varchar(255),
+        `min_amount` double precision,
+        `min_currency` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `acme_request` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `moment` datetime(6),
+        `reward_amount` double precision,
+        `reward_currency` varchar(255),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -53,6 +81,16 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `investor_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `investing_statement` double precision,
+        `name` varchar(255),
+        `sector` varchar(255),
+        `stars` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
@@ -88,6 +126,12 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `acme_offer` 
+       add constraint UK_1n1ec8cnfoqp9g8a7mucil9od unique (`ticker`);
+
+    alter table `acme_request` 
+       add constraint UK_oycxhvu32i3mjhwooe9yvt62c unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
