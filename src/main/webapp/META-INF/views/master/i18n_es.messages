@@ -26,11 +26,18 @@ master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
+
+# master.menu.anonymous #######################################################
+
+master.menu.anonymous.company_records = Registro de empresas
+master.menu.authenticated.company_records = Registro de empresas
+
 # master.menu.announcements #######################################################
 
 master.menu.anonymous.announcements = Anuncios
 master.menu.authenticated.announcements = Anuncios
 master.menu.administrator.announcements = Anuncios de admin
+
 
 # master.menu.anonymous #######################################################
 

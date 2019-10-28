@@ -315,6 +315,27 @@ Shout
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+    <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>301</y>
+      <w>350</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Company_records
+--
+company_name: String{NotBlank}
+sector: String{NotBlank}
+ceo_name: String{NotBlank}
+activities: String{NotBlank}
+website: String{NotBlank}
+contact_phone: {NotBlank}{Pattern="[+][0-9]{3}[ ][(][0-9]{4}[)][ ][0-9]{6,10}"}
+contact_email: String{Email}
+stars: Double{Range: min=1,max=5}{Digits: integer=1,fraction=1}</panel_attributes>
+    <additional_attributes/>
+  </element>
   <element>
     <id>UMLClass</id>
     <coordinates>

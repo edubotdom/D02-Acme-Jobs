@@ -58,6 +58,20 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `company_records` (
+       `id` integer not null,
+        `version` integer not null,
+        `activities` varchar(255),
+        `ceo_name` varchar(255),
+        `company_name` varchar(255),
+        `contact_email` varchar(255),
+        `contact_phone` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
+        `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,

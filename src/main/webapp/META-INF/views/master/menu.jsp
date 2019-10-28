@@ -47,7 +47,10 @@
 		<acme:menu-option code="master.menu.authenticated.announcements" action="/authenticated/announcement/list" access="isAuthenticated()"/>
 		<acme:menu-option code="master.menu.administrator.announcements" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
 
-		
+		<!--Company records-->
+		<acme:menu-option code="master.menu.anonymous.company_records" action="/anonymous/company_records/list" access="isAnonymous()"/>
+		<acme:menu-option code="master.menu.authenticated.company_records" action="/authenticated/company_records/list" access="isAuthenticated()"/>
+    
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
