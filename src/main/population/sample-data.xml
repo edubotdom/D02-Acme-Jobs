@@ -54,7 +54,7 @@
 
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01"/>
-		<property name="moment" value="2019/06/10 10:35"/>
+		<property name="moment" value="2019/10/10 10:35"/>
 		<property name="moreInfo"><null/></property>
 		<property name="text" value="This is a description of a sample announcement"/>
 	</bean>
@@ -133,5 +133,28 @@
 		<property name="min" value="1000.50€"/>
 		<property name="max" value="1300.50€"/>
 	</bean>	
+	
+<!-- Investor record's beans-->
 
+	<bean id="investor_record01" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Edu Mig"/>
+		<property name="sector" value="Sector 1"/>
+		<property name="investing_statement" value="129.23"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="investor_record02" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Juanogtir"/>
+		<property name="sector" value="Sector 2"/>
+		<property name="investing_statement" value="123801.23"/>
+		<property name="stars" value="0"/>
+	</bean>
+	
+	<bean id="investor_record03" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Danaremar"/>
+		<property name="sector" value="Sector 3"/>
+		<property name="investing_statement" value="129343.23"/>
+		<property name="stars"> <null/></property>
+	</bean>
+	
 </beans>

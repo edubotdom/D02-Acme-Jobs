@@ -10,24 +10,24 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.announcement;
+package acme.features.anonymous.investor_record;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.announcements.Announcement;
+import acme.entities.investor_records.Investor_record;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AuthenticatedAnnouncementRepository extends AbstractRepository {
+public interface AnonymousInvestorRecordRepository extends AbstractRepository {
 
-	@Query("select a from Announcement a where a.id = ?1")
-	Announcement findOneById(int id);
+	@Query("select i from Investor_record i where i.id = ?1")
+	Investor_record findOneById(int id);
 
-	//@Query("select a from Announcement a")
-	@Query("select a from Announcement a where current_timestamp() - a.moment < 30000000")
-	Collection<Announcement> findManyAll();
+	//@Query("select i from Investor_record i")
+	@Query("select i from Investor_record i")
+	Collection<Investor_record> findManyAll();
 
 }

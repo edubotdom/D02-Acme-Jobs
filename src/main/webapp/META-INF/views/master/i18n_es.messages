@@ -26,6 +26,11 @@ master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
+# master.menu.announcements #######################################################
+
+master.menu.anonymous.announcements = Anuncios
+master.menu.authenticated.announcements = Anuncios
+master.menu.administrator.announcements = Anuncios de admin
 
 # master.menu.anonymous #######################################################
 
@@ -36,6 +41,10 @@ master.menu.anonymous.edubotdom-favourite-link = Enlace favorito de edubotdom
 master.menu.anonymous.javvazzam-favourite-link = Enlace favorito de javvazzam
 master.menu.anonymous.danaremar-favourite-link = Enlace favorito de danaremar
 master.menu.anonymous.seraguoro-favourite-link = Enlace favorito de seraguoro
+master.menu.anonymous.investor_record = Registros de inversores
+
+# master.menu.authenticated ###################################################
+master.menu.authenticated.investor_record = Registros de inversores
 
 # master.menu.authenticated #######################################################
 master.menu.authenticated.acme_request = Peticiones
