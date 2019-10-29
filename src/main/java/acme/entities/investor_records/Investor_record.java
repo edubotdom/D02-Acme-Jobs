@@ -3,8 +3,6 @@ package acme.entities.investor_records;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
 
 import org.hibernate.validator.constraints.Range;
 
@@ -27,9 +25,8 @@ public class Investor_record extends DomainEntity {
 	@NotBlank
 	private String				sector;
 
-	@NotNull
-	@Positive
-	private Double				investing_statement;
+	@NotBlank
+	private String				investing_statement;
 
 	@Range(min = 0, max = 5, message = "La puntuación debe de estar desde 0 a 5 estrellas")
 	private Integer				stars;

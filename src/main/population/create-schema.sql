@@ -58,6 +58,24 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `bronze_goal` varchar(255),
+        `bronze_reward_amount` double precision,
+        `bronze_reward_currency` varchar(255),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `gold_goal` varchar(255),
+        `gold_reward_amount` double precision,
+        `gold_reward_currency` varchar(255),
+        `silver_goal` varchar(255),
+        `silver_reward_amount` double precision,
+        `silver_reward_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `company_records` (
        `id` integer not null,
         `version` integer not null,
@@ -84,7 +102,7 @@
     create table `investor_record` (
        `id` integer not null,
         `version` integer not null,
-        `investing_statement` double precision,
+        `investing_statement` varchar(255),
         `name` varchar(255),
         `sector` varchar(255),
         `stars` integer,

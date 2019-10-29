@@ -175,22 +175,22 @@
 
 	<bean id="investor_record01" class="acme.entities.investor_records.Investor_record">
 		<property name="name" value="Edu Mig"/>
-		<property name="sector" value="Sector 1"/>
-		<property name="investing_statement" value="129.23"/>
+		<property name="sector" value="Automoción"/>
+		<property name="investing_statement" value="Esto es una declaración de inversión de Edu Mig"/>
 		<property name="stars" value="3"/>
 	</bean>
 	
 	<bean id="investor_record02" class="acme.entities.investor_records.Investor_record">
 		<property name="name" value="Juanogtir"/>
-		<property name="sector" value="Sector 2"/>
-		<property name="investing_statement" value="123801.23"/>
+		<property name="sector" value="Social Networking"/>
+		<property name="investing_statement" value="Esto es una declaración de inversión de Juanogtir"/>
 		<property name="stars" value="0"/>
 	</bean>
 	
 	<bean id="investor_record03" class="acme.entities.investor_records.Investor_record">
 		<property name="name" value="Danaremar"/>
-		<property name="sector" value="Sector 3"/>
-		<property name="investing_statement" value="129343.23"/>
+		<property name="sector" value="Software Libre"/>
+		<property name="investing_statement" value="Esto es una declaración de inversión de Danaremar"/>
 		<property name="stars"> <null/></property>
   </bean>
 
