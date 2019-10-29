@@ -57,9 +57,13 @@
 		<!--Company records-->
 		<acme:menu-option code="master.menu.anonymous.company_records" action="/anonymous/company_records/list" access="isAnonymous()"/>
 		<acme:menu-option code="master.menu.authenticated.company_records" action="/authenticated/company_records/list" access="isAuthenticated()"/>
-		
+
+		<!-- Spam -->
+		<acme:menu-option code="master.menu.administrator.spam" action="/administrator/spam/list" access="hasRole('Administrator')"/>
+
 		<!--Top company records-->
 		<acme:menu-option code="master.menu.anonymous.top_company_records" action="/anonymous/top_company_records/list" access="isAnonymous()"/>
+
     
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
