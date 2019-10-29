@@ -30,6 +30,7 @@ master.menu.sign-out = Salir
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous.company_records = Registro de empresas
+master.menu.anonymous.top_company_records = Mejores empresas
 master.menu.authenticated.company_records = Registro de empresas
 
 # master.menu.announcements #######################################################
