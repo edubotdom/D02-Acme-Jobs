@@ -392,6 +392,28 @@ stars: Double{Range: min=1,max=5}{Digits: integer=1,fraction=1}</panel_attribute
     <element>
     <id>UMLClass</id>
     <coordinates>
+      <x>476</x>
+      <y>364</y>
+      <w>301</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Challenge
+--
++ title: String{NotBlank}
++ deadline: moment{Temporal(TIMESTAMP)}
++ description: String{NotBlank}
++ goldGoal: String{NotBlank}
++ goldReward: Money{Valid}
++ silverGoal: String{NotBlank}
++ silverReward: Money{Valid}
++ bronzeGoal: String{NotBlank}
++ bronzeReward: Money{Valid}</panel_attributes>
+    <additional_attributes/>
+  </element>
+    <element>
+    <id>UMLClass</id>
+    <coordinates>
       <x>0</x>
       <y>378</y>
       <w>203</w>

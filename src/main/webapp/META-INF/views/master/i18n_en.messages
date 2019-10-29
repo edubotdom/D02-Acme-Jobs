@@ -38,6 +38,10 @@ master.menu.anonymous.announcements = Announcements
 master.menu.authenticated.announcements = Announcements
 master.menu.administrator.announcements = Admin announcements
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated.challenge = List challenges
+
 
 # master.menu.anonymous #######################################################
 

@@ -50,6 +50,44 @@
 		<property name="moment" value="2019/09/03 19:42"/>
 	</bean>
 
+  <!-- Challenge beans-->
+
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Singing challenge"/>
+		<property name="deadline" value="2020/12/10 00:00"/>
+		<property name="description" value="Singing challenge"/>
+		<property name="goldGoal" value="Sing in public"/>
+		<property name="goldReward" value="10€"/>
+		<property name="silverGoal" value="Sing to your friends"/>
+		<property name="silverReward" value="5€"/>
+		<property name="bronzeGoal" value="Sing in your bathroom"/>
+		<property name="bronzeReward" value="1€"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Jumping challenge"/>
+		<property name="deadline" value="2022/12/10 00:00"/>
+		<property name="description" value="Jumping challenge"/>
+		<property name="goldGoal" value="Jump in public"/>
+		<property name="goldReward" value="10€"/>
+		<property name="silverGoal" value="Jump to your friends"/>
+		<property name="silverReward" value="5€"/>
+		<property name="bronzeGoal" value="Jump in your bathroom"/>
+		<property name="bronzeReward" value="1€"/>
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Dabbing challenge"/>
+		<property name="deadline" value="2021/12/10 00:00"/>
+		<property name="description" value="Dabbing challenge"/>
+		<property name="goldGoal" value="Dab on them haters"/>
+		<property name="goldReward" value="10€"/>
+		<property name="silverGoal" value="Dab on your dog"/>
+		<property name="silverReward" value="5€"/>
+		<property name="bronzeGoal" value="Dab to yourself"/>
+		<property name="bronzeReward" value="1€"/>
+	</bean>	
+  
 <!-- Announcement's beans-->
 
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
@@ -202,5 +240,4 @@
 	</bean>
 	
 </beans>
-
 

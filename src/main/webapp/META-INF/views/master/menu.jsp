@@ -28,6 +28,11 @@
 			
 		</acme:menu-option>
 		
+    	<!--Challenge-->
+		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list"/>		
+		</acme:menu-option>
+    
     <!-- Requests & offers -->
     <acme:menu-option code="master.menu.authenticated.acme_request" action="/authenticated/acme_request/list"
 			access="isAuthenticated()" />
@@ -81,4 +86,3 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
-
