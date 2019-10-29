@@ -18,7 +18,6 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-
       <x>588</x>
       <y>203</y>
       <w>70</w>
@@ -30,7 +29,6 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-
       <x>217</x>
       <y>98</y>
       <w>154</w>
@@ -64,7 +62,6 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-
       <x>287</x>
       <y>70</y>
       <w>21</w>
@@ -315,7 +312,7 @@ Shout
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
-    <element>
+  <element>
     <id>UMLClass</id>
     <coordinates>
       <x>980</x>
@@ -387,9 +384,9 @@ stars: Double{Range: min=1,max=5}{Digits: integer=1,fraction=1}</panel_attribute
 + moment: Date {Temporal(TIMESTAMP)}
 + text: String {NotBlank}
 + reward: Money</panel_attributes>
- <additional_attributes/>
+    <additional_attributes/>
   </element>
-    <element>
+  <element>
     <id>UMLClass</id>
     <coordinates>
       <x>476</x>
@@ -411,7 +408,7 @@ Challenge
 + bronzeReward: Money{Valid}</panel_attributes>
     <additional_attributes/>
   </element>
-    <element>
+  <element>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
@@ -423,7 +420,7 @@ Challenge
 --
 + name: String {NotBlank}
 + sector: String {NotBlank}
-+ investing_statement: Double {NotNegative}
++ investing_statement: String {NotBlank}
 + stars: Integer {Range 0-5}</panel_attributes>
     <additional_attributes/>
   </element>
