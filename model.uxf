@@ -424,4 +424,38 @@ Challenge
 + stars: Integer {Range 0-5}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>847</x>
+      <y>476</y>
+      <w>161</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Commercial_banner
+--
++ picture: String {URL}
++ slogan: String {NotBlank} 
++ url: String {URL}
++ credit_card: String {NotBlank}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1029</x>
+      <y>476</y>
+      <w>182</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Noncommercial_banner
+--
++ picture: String {URL}
++ slogan: String {NotBlank} 
++ url: String {URL}
++ jingle: String {URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
