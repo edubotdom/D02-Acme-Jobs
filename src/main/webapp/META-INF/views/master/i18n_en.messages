@@ -37,6 +37,10 @@ master.menu.anonymous.javvazzam-favourite-link = javvazzam's favourite link
 master.menu.anonymous.danaremar-favourite-link = danaremar's favourite link
 master.menu.anonymous.seraguoro-favourite-link = seraguoro's favourite link
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated.challenge = List challenges
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
