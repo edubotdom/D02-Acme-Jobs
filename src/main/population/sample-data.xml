@@ -201,7 +201,7 @@
 		<property name="ceo_name" value="Elon Musk"/>
 		<property name="activities" value="Create rockets and cross human's limits"/>
 		<property name="website" value="https://www.spacex.com/"/>
-		<property name="contact_phone" value="+123 (0041) 987654321"/>
+		<property name="contact_phone" value="+123 987654321"/>
 		<property name="contact_email" value="spacex@spacex.com"/>
 		<property name="stars" value="4.6"/>
 	</bean>
@@ -212,7 +212,7 @@
 		<property name="ceo_name" value="Manolo Manolitos"/>
 		<property name="activities" value="Sell food to create a healthier life"/>
 		<property name="website" value="https://www.manolo-fruit.com/"/>
-		<property name="contact_phone" value="+123 (1234) 654321"/>
+		<property name="contact_phone" value="+123 (1234) 6543212"/>
 		<property name="contact_email" value="manolo-fruit@gmail.com"/>
 		<property name="stars" value="2.1"/>
 	</bean>
@@ -223,7 +223,7 @@
 		<property name="ceo_name" value="James Quincey"/>
 		<property name="activities" value="Improve life's feeling"/>
 		<property name="website" value="https://www.cocacola.es/es/home/"/>
-		<property name="contact_phone" value="+123 (0112) 9876543210"/>
+		<property name="contact_phone" value="(112) 9876543210"/>
 		<property name="contact_email" value="coca-cola@coca-cola.es"/>
 		<property name="stars"><null/></property>
 	</bean>
@@ -234,7 +234,7 @@
 		<property name="ceo_name" value="Ramón Laguarta"/>
 		<property name="activities" value="Makes people happier"/>
 		<property name="website" value="http://www.pepsiworld.com/"/>
-		<property name="contact_phone" value="+123 (0112) 9876543210"/>
+		<property name="contact_phone" value="+123 (0) 9876543210"/>
 		<property name="contact_email" value="pepsi@pepsi-corp.es"/>
 		<property name="stars" value="4.1"/>
 	</bean>
