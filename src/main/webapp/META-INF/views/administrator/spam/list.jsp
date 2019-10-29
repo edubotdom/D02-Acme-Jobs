@@ -16,7 +16,7 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:list>
+<acme:list readonly="true">
 	<acme:list-column code="administrator.spam.list.label.spam_words" path="spam_words" width="70%"/>
 	<acme:list-column code="administrator.spam.list.label.spam_threshold" path="spam_threshold" width="15%"/>	
 	<acme:list-column code="administrator.spam.list.label.lang" path="lang" width="15%"/>
