@@ -50,31 +50,7 @@
 		<property name="moment" value="2019/09/03 19:42"/>
 	</bean>
 
-<!-- Announcement's beans-->
-
-	<bean id="announcement01" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 01"/>
-		<property name="moment" value="2019/10/10 10:35"/>
-		<property name="moreInfo"><null/></property>
-		<property name="text" value="This is a description of a sample announcement"/>
-		
-	</bean>
-	
-	<bean id="announcement02" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 02"/>
-		<property name="moment" value="2019/06/10 00:00"/>
-		<property name="moreInfo" value="http://www.example.com"/>
-		<property name="text" value="This is a description of another announcement"/>
-	</bean>
-	
-	<bean id="announcement03" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample very old announcement 03"/>
-		<property name="moment" value="1900/10/10 19:10"/>
-		<property name="moreInfo" value="http://www.example.com"/>
-		<property name="text" value="This is a description of a very old announcement"/>
-	</bean>	
-
-<!-- Challenge beans-->
+  <!-- Challenge beans-->
 
 	<bean id="challenge01" class="acme.entities.challenges.Challenge">
 		<property name="title" value="Singing challenge"/>
@@ -111,5 +87,157 @@
 		<property name="bronzeGoal" value="Dab to yourself"/>
 		<property name="bronzeReward" value="1€"/>
 	</bean>	
+  
+<!-- Announcement's beans-->
 
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01"/>
+		<property name="moment" value="2019/10/10 10:35"/>
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is a description of a sample announcement"/>
+	</bean>
+	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02"/>
+		<property name="moment" value="2019/06/10 00:00"/>
+		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="text" value="This is a description of another announcement"/>
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample very old announcement 03"/>
+		<property name="moment" value="1900/10/10 19:10"/>
+		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="text" value="This is a description of a very old announcement"/>
+	</bean>
+	
+	<!-- Acme_request's beans-->
+
+	<bean id="acme_request01" class="acme.entities.acme_requests.Acme_request">
+		<property name="ticker" value="RAAAA-00000"/>
+		<property name="title" value="Sample request 01"/>
+		<property name="moment" value="2019/06/10 10:35"/>
+		<property name="deadline" value="2019/08/10 10:35"/>
+		<property name="text" value="This is a description of a sample request"/>
+		<property name="reward" value="40.20€"/>
+	</bean>
+	
+	<bean id="acme_request02" class="acme.entities.acme_requests.Acme_request">
+		<property name="ticker" value="RBBBB-00000"/>
+		<property name="title" value="Sample request 02"/>
+		<property name="moment" value="2019/06/10 00:00"/>
+		<property name="deadline" value="2019/10/10 12:00"/>
+		<property name="text" value="This is a description of another request"/>
+		<property name="reward" value="65€"/>
+	</bean>
+	
+	<bean id="acme_request03" class="acme.entities.acme_requests.Acme_request">
+		<property name="ticker" value="RCCCC-00000"/>
+		<property name="title" value="Sample request 03"/>
+		<property name="moment" value="1900/10/10 19:10"/>
+		<property name="deadline" value="1901/10/10 19:10"/>
+		<property name="text" value="This is a description of a very old request"/>
+		<property name="reward" value="100.50€"/>
+	</bean>	
+	
+	<!-- Acme_offer's beans-->
+<bean id="acme_offer01" class="acme.entities.acme_offers.Acme_offer">
+		<property name="ticker" value="OAAAA-00000"/>
+		<property name="title" value="Sample offer 01"/>
+		<property name="moment" value="2019/06/10 10:35"/>
+		<property name="deadline" value="2019/08/10 10:35"/>
+		<property name="text" value="This is a description of a sample offer"/>
+		<property name="min" value="400.20€"/>
+		<property name="max" value="650€"/>
+	</bean>
+	
+	<bean id="acme_offer02" class="acme.entities.acme_offers.Acme_offer">
+		<property name="ticker" value="OBBBB-00000"/>
+		<property name="title" value="Sample offer 02"/>
+		<property name="moment" value="2019/06/10 00:00"/>
+		<property name="deadline" value="2019/10/10 12:00"/>
+		<property name="text" value="This is a description of another offer"/>
+		<property name="min" value="65€"/>
+		<property name="max" value="1000.50€"/>
+	</bean>
+	
+	<bean id="acme_offer03" class="acme.entities.acme_offers.Acme_offer">
+		<property name="ticker" value="OCCCC-00000"/>
+		<property name="title" value="Sample offer 03"/>
+		<property name="moment" value="1900/10/10 19:10"/>
+		<property name="deadline" value="1901/10/10 19:10"/>
+		<property name="text" value="This is a description of a very old offer"/>
+		<property name="min" value="1000.50€"/>
+		<property name="max" value="1300.50€"/>
+	</bean>	
+	
+<!-- Investor record's beans-->
+
+	<bean id="investor_record01" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Edu Mig"/>
+		<property name="sector" value="Sector 1"/>
+		<property name="investing_statement" value="129.23"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="investor_record02" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Juanogtir"/>
+		<property name="sector" value="Sector 2"/>
+		<property name="investing_statement" value="123801.23"/>
+		<property name="stars" value="0"/>
+	</bean>
+	
+	<bean id="investor_record03" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Danaremar"/>
+		<property name="sector" value="Sector 3"/>
+		<property name="investing_statement" value="129343.23"/>
+		<property name="stars"> <null/></property>
+  </bean>
+
+	<!-- Announcement's beans-->
+	<bean id="company_records01" class="acme.entities.company_records.Company_records">
+		<property name="company_name" value="Space X, Inc."/>
+		<property name="sector" value="Aerospace"/>
+		<property name="ceo_name" value="Elon Musk"/>
+		<property name="activities" value="Create rockets and cross human's limits"/>
+		<property name="website" value="https://www.spacex.com/"/>
+		<property name="contact_phone" value="+123 (0041) 987654321"/>
+		<property name="contact_email" value="spacex@spacex.com"/>
+		<property name="stars" value="4.6"/>
+	</bean>
+	
+	<bean id="company_records02" class="acme.entities.company_records.Company_records">
+		<property name="company_name" value="Manolo's fruit store LLC"/>
+		<property name="sector" value="Food"/>
+		<property name="ceo_name" value="Manolo Manolitos"/>
+		<property name="activities" value="Sell food to create a healthier life"/>
+		<property name="website" value="https://www.manolo-fruit.com/"/>
+		<property name="contact_phone" value="+123 (1234) 654321"/>
+		<property name="contact_email" value="manolo-fruit@gmail.com"/>
+		<property name="stars" value="2.1"/>
+	</bean>
+	
+	<bean id="company_records03" class="acme.entities.company_records.Company_records">
+		<property name="company_name" value="Coca-Cola, Inc."/>
+		<property name="sector" value="Food"/>
+		<property name="ceo_name" value="James Quincey"/>
+		<property name="activities" value="Improve life's feeling"/>
+		<property name="website" value="https://www.cocacola.es/es/home/"/>
+		<property name="contact_phone" value="+123 (0112) 9876543210"/>
+		<property name="contact_email" value="coca-cola@coca-cola.es"/>
+		<property name="stars"><null/></property>
+	</bean>
+	
+	<bean id="company_records04" class="acme.entities.company_records.Company_records">
+		<property name="company_name" value="Pepsi, Inc."/>
+		<property name="sector" value="Food"/>
+		<property name="ceo_name" value="Ramón Laguarta"/>
+		<property name="activities" value="Makes people happier"/>
+		<property name="website" value="http://www.pepsiworld.com/"/>
+		<property name="contact_phone" value="+123 (0112) 9876543210"/>
+		<property name="contact_email" value="pepsi@pepsi-corp.es"/>
+		<property name="stars" value="4.1"/>
+	</bean>
+	
 </beans>
+

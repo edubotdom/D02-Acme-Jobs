@@ -29,6 +29,22 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
+master.menu.anonymous.company_records = Registro de empresas
+master.menu.authenticated.company_records = Registro de empresas
+
+# master.menu.announcements #######################################################
+
+master.menu.anonymous.announcements = Anuncios
+master.menu.authenticated.announcements = Anuncios
+master.menu.administrator.announcements = Anuncios de admin
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated.challenge = Listar retos
+
+
+# master.menu.anonymous #######################################################
+
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.juanogtir-favourite-link = Enlace favorito de juanogtir
@@ -36,10 +52,14 @@ master.menu.anonymous.edubotdom-favourite-link = Enlace favorito de edubotdom
 master.menu.anonymous.javvazzam-favourite-link = Enlace favorito de javvazzam
 master.menu.anonymous.danaremar-favourite-link = Enlace favorito de danaremar
 master.menu.anonymous.seraguoro-favourite-link = Enlace favorito de seraguoro
+master.menu.anonymous.investor_record = Registros de inversores
 
 # master.menu.authenticated ###################################################
+master.menu.authenticated.investor_record = Registros de inversores
 
-master.menu.authenticated.challenge = Listar retos
+# master.menu.authenticated #######################################################
+master.menu.authenticated.acme_request = Peticiones
+master.menu.authenticated.acme_offer = Ofertas
 
 # master.menu.administrator ###################################################
 

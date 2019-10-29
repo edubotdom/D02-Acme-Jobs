@@ -28,12 +28,34 @@
 			
 		</acme:menu-option>
 		
-		
+    	<!--Challenge-->
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list"/>		
 		</acme:menu-option>
-		
-		
+    
+    <!-- Requests & offers -->
+    <acme:menu-option code="master.menu.authenticated.acme_request" action="/authenticated/acme_request/list"
+			access="isAuthenticated()" />
+			
+		<acme:menu-option code="master.menu.authenticated.acme_offer" action="/authenticated/acme_offer/list"
+			access="isAuthenticated()" />
+
+    
+    <!-- Investor records -->
+		<acme:menu-option code="master.menu.authenticated.investor_record" action="/authenticated/investor_record/list" access="isAuthenticated()" >
+		</acme:menu-option>
+		<acme:menu-option code="master.menu.anonymous.investor_record" action="/anonymous/investor_record/list" access="isAnonymous()" >
+		</acme:menu-option>
+
+		<!-- Announcements -->
+		<acme:menu-option code="master.menu.anonymous.announcements" action="/anonymous/announcement/list" access="isAnonymous()"/>
+		<acme:menu-option code="master.menu.authenticated.announcements" action="/authenticated/announcement/list" access="isAuthenticated()"/>
+		<acme:menu-option code="master.menu.administrator.announcements" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
+
+		<!--Company records-->
+		<acme:menu-option code="master.menu.anonymous.company_records" action="/anonymous/company_records/list" access="isAnonymous()"/>
+		<acme:menu-option code="master.menu.authenticated.company_records" action="/authenticated/company_records/list" access="isAuthenticated()"/>
+    
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
@@ -64,4 +86,3 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
-
