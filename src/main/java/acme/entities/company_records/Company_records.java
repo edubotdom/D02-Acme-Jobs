@@ -38,7 +38,7 @@ public class Company_records extends DomainEntity {
 
 	// Example of regular exp: +999 (9999) 99999999
 	@NotBlank
-	@Pattern(regexp = "[+][0-9]{3}[ ][(][0-9]{4}[)][ ][0-9]{6,10}")
+	@Pattern(regexp = "^(\\+([1-9]{1}[0-9]{0,2})\\s)?(\\(([1-9]{1}[0-9]{0,3}|0)\\)\\s)?([0-9]{6,10})$")
 	private String				contact_phone;
 
 	@NotBlank

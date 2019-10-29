@@ -30,7 +30,7 @@ public class Acme_request extends DomainEntity {
 	@Column(unique = true)
 	@Length(min = 11, max = 11)
 	@NotBlank
-	@Pattern(regexp = "(R)([A-Z]){4}(-)([0-9]){5}")
+	@Pattern(regexp = "^R[A-Z]{4}-[0-9]{5}$")
 	private String				ticker;
 
 	@NotBlank
