@@ -66,6 +66,7 @@ master.menu.authenticated.acme_offer = Ofertas
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.spam = Spam
 
 # master.menu.provider ########################################################
 

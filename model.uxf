@@ -424,4 +424,19 @@ Challenge
 + stars: Integer {Range 0-5}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>805</x>
+      <y>546</y>
+      <w>294</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Spam
+--
+spam_words: String{NotBlank}
+spam_threshold: Double{Range:min=0,max=100}{NotNull}
+lang: String{NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
