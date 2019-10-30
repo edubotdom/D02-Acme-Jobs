@@ -30,7 +30,11 @@ master.menu.sign-out = Salir
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous.company_records = Registro de empresas
+master.menu.anonymous.top_company_records = Mejores empresas
 master.menu.authenticated.company_records = Registro de empresas
+master.menu.anonymous.investor_record = Registro de inversores
+master.menu.anonymous.top_investor_record = Mejores inversores
+
 
 # master.menu.announcements #######################################################
 
@@ -52,7 +56,7 @@ master.menu.anonymous.edubotdom-favourite-link = Enlace favorito de edubotdom
 master.menu.anonymous.javvazzam-favourite-link = Enlace favorito de javvazzam
 master.menu.anonymous.danaremar-favourite-link = Enlace favorito de danaremar
 master.menu.anonymous.seraguoro-favourite-link = Enlace favorito de seraguoro
-master.menu.anonymous.investor_record = Registros de inversores
+
 
 # master.menu.authenticated ###################################################
 master.menu.authenticated.investor_record = Registros de inversores
@@ -66,6 +70,7 @@ master.menu.authenticated.acme_offer = Ofertas
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.spam = Spam
 
 # master.menu.provider ########################################################
 

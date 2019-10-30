@@ -192,9 +192,16 @@
 		<property name="sector" value="Software Libre"/>
 		<property name="investing_statement" value="Esto es una declaración de inversión de Danaremar"/>
 		<property name="stars"> <null/></property>
-  </bean>
+  	</bean>
+  
+  	<bean id="investor_record04" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Lenny Tavarez"/>
+		<property name="sector" value="Music"/>
+		<property name="investing_statement" value="Esto es una declaración de inversión de Lenny Tavarez"/>
+		<property name="stars" value="5"/>
+	</bean>
 
-	<!-- Announcement's beans-->
+	<!-- Company record's beans-->
 	<bean id="company_records01" class="acme.entities.company_records.Company_records">
 		<property name="company_name" value="Space X, Inc."/>
 		<property name="sector" value="Aerospace"/>
@@ -236,7 +243,7 @@
 		<property name="website" value="http://www.pepsiworld.com/"/>
 		<property name="contact_phone" value="+123 (0) 9876543210"/>
 		<property name="contact_email" value="pepsi@pepsi-corp.es"/>
-		<property name="stars" value="4.1"/>
+		<property name="stars" value="5.0"/>
 	</bean>
 	
 	<!-- Commercial Banner's bean -->
