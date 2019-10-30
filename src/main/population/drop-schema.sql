@@ -33,11 +33,15 @@
 
     drop table if exists `challenge`;
 
+    drop table if exists `commercial_banner`;
+
     drop table if exists `company_records`;
 
     drop table if exists `consumer`;
 
     drop table if exists `investor_record`;
+
+    drop table if exists `noncommercial_banner`;
 
     drop table if exists `provider`;
 
