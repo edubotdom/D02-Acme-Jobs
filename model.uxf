@@ -341,7 +341,8 @@ stars: Double{Range: min=1,max=5}{Digits: integer=1,fraction=1}</panel_attribute
       <w>217</w>
       <h>77</h>
     </coordinates>
-    <panel_attributes>Announcement
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Announcement
 --
 + title:String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past}
@@ -357,7 +358,8 @@ stars: Double{Range: min=1,max=5}{Digits: integer=1,fraction=1}</panel_attribute
       <w>231</w>
       <h>98</h>
     </coordinates>
-    <panel_attributes>Acme_offer
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Acme_offer
 --
 + ticker: String {Unique, NotBlank, Length(11, 11))}
 + title:String {NotBlank}
@@ -376,7 +378,8 @@ stars: Double{Range: min=1,max=5}{Digits: integer=1,fraction=1}</panel_attribute
       <w>224</w>
       <h>91</h>
     </coordinates>
-    <panel_attributes>Acme_request
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Acme_request
 --
 + ticker: String {Unique, NotBlank, Length(11, 11))}
 + title:String {NotBlank}
@@ -416,7 +419,8 @@ Challenge
       <w>203</w>
       <h>91</h>
     </coordinates>
-    <panel_attributes>Investor_record
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Investor_record
 --
 + name: String {NotBlank}
 + sector: String {NotBlank}
@@ -425,6 +429,73 @@ Challenge
     <additional_attributes/>
   </element>
   <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>826</x>
+      <y>637</y>
+      <w>147</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Commercial_banner
+--
++ credit_card: String {NotBlank}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1029</x>
+      <y>637</y>
+      <w>126</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Noncommercial_banner
+--
++ jingle: String {URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>924</x>
+      <y>518</y>
+      <w>147</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Banner
+--
++ picture: String {URL}
++ slogan: String {NotBlank} 
++ url: String {URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>896</x>
+      <y>574</y>
+      <w>112</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;140.0;50.0;10.0;50.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>987</x>
+      <y>574</y>
+      <w>119</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;150.0;50.0;150.0;90.0</additional_attributes>
+  </element>
+    <element>
     <id>UMLClass</id>
     <coordinates>
       <x>805</x>

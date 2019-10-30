@@ -246,5 +246,46 @@
 		<property name="stars" value="5.0"/>
 	</bean>
 	
+	<!-- Commercial Banner's bean -->
+	
+	<bean id="commercial_banner01" class="acme.entities.commercial_banners.Commercial_banner">
+		<property name="picture" value="http://piezaapieza.net/wp-content/uploads/2016/11/EDU84131.01.jpg"/>
+		<property name="slogan" value="Edu Mig"/>
+		<property name="url" value="https://www.atptour.com/"/>
+		<property name="credit_card" value="4793823612819522"/>
+	</bean>
+	<bean id="commercial_banner02" class="acme.entities.commercial_banners.Commercial_banner">
+		<property name="picture" value="https://s3.eestatic.com/2019/09/23/ciencia/Otono-Ciencia_431466954_134482819_1024x576.jpg"/>
+		<property name="slogan" value="The autum in Spain "/>
+		<property name="url" value="https://www.elperiodico.com/es/sociedad/20190918/otono-2019-equinoccio-dia-hora-7639468"/>
+		<property name="credit_card" value="4126673159904486"/>
+	</bean>
+	<bean id="commercial_banner03" class="acme.entities.commercial_banners.Commercial_banner">
+		<property name="picture" value="http://piezaapieza.net/wp-content/uploads/2016/11/EDU84131.01.jpg"/>
+		<property name="slogan" value="Work as anyone"/>
+		<property name="url" value="https://www.atptour.com/"/>
+		<property name="credit_card" value="4552748942901537"/>
+	</bean>
+	
+	<!-- Non-commercial Banner's bean -->
+	
+	<bean id="noncommercial_banner01" class="acme.entities.noncommercial_banners.Noncommercial_banner">
+		<property name="picture" value="https://miro.medium.com/max/1024/1*vxjAHkrXbGG6gOiPZgjeZA.jpeg"/>
+		<property name="slogan" value="Conocimiento es poder"/>
+		<property name="url" value="https://neoattack.com/"/>
+		<property name="jingle" value="https://neoattack.com/"/>
+	</bean>
+	<bean id="noncommercial_banner02" class="acme.entities.noncommercial_banners.Noncommercial_banner">
+		<property name="picture" value="https://media.istockphoto.com/illustrations/wind-icon-illustration-id912304034"/>
+		<property name="slogan" value="wild is the wind"/>
+		<property name="url" value="https://www.tiempo.com/montequinto.htm"/>
+		<property name="jingle"><null/></property>
+	</bean>
+	<bean id="noncommercial_banner03" class="acme.entities.noncommercial_banners.Noncommercial_banner">
+		<property name="picture" value="http://expertolaboralonline.com/vacaciones/"/>
+		<property name="slogan" value="Sundays means no work"/>
+		<property name="url" value="https://m.media-amazon.com/images/I/81Nb9fNuZcL._SS500_.jpg"/>
+		<property name="jingle"><null/></property>
+	</bean>
 </beans>
 
