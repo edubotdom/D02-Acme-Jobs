@@ -21,5 +21,5 @@
 	<acme:form-url code="administrator.announcement.form.label.moreInfo" path="moreInfo"/>
 	<acme:form-textarea code="administrator.announcement.form.label.text" path="text"/>
 	
-  	<acme:form-return code="administrator.shout.form.button.return"/>
+  	<acme:form-return code="administrator.announcement.form.button.return"/>
 </acme:form>
