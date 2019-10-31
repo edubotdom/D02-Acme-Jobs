@@ -26,25 +26,10 @@ master.menu.sign-up = Sign up
 master.menu.sign-in = Sign in
 master.menu.sign-out = Sign out
 
-
-# master.menu.anonymous #######################################################
-
-master.menu.anonymous.company_records = Company records
-master.menu.anonymous.top_company_records = Top company records
-master.menu.authenticated.company_records = Company records
-master.menu.anonymous.investor_record = Investor records
-master.menu.anonymous.top_investor_record = Top investor records
-
-# master.menu.announcements #######################################################
-
-master.menu.anonymous.announcements = Announcements
-master.menu.authenticated.announcements = Announcements
-master.menu.administrator.announcements = Admin announcements
-
-# master.menu.authenticated ###################################################
-
-master.menu.authenticated.challenge = List challenges
-
+# master.menu.selector #######################################################
+master.menu.selector.anonymous = Anonymous's Selector
+master.menu.selector.authenticated = Authenticated's Selector 
+master.menu.selector.administrator = Administrator's Selector
 
 # master.menu.anonymous #######################################################
 
@@ -56,16 +41,24 @@ master.menu.anonymous.javvazzam-favourite-link = javvazzam's favourite link
 master.menu.anonymous.danaremar-favourite-link = danaremar's favourite link
 master.menu.anonymous.seraguoro-favourite-link = seraguoro's favourite link
 
-# master.menu.authenticated ###################################################
-master.menu.authenticated.investor_record = Investor records
+master.menu.anonymous.announcements = Announcements
+master.menu.anonymous.company_records = Company records
+master.menu.anonymous.investor_record = Investor records
+master.menu.anonymous.top_company_records = Top company records
+master.menu.anonymous.top_investor_record = Top investor records
 
-# master.menu.authenticated #######################################################
-master.menu.authenticated.acme_request = Requests
+# master.menu.authenticated ###################################################
 master.menu.authenticated.acme_offer = Offers
+master.menu.authenticated.acme_request = Requests
+master.menu.authenticated.announcements = Announcements
+master.menu.authenticated.challenge = List challenges
+master.menu.authenticated.company_records = Company records
+master.menu.authenticated.investor_record = Investor records
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
+master.menu.administrator.announcements = Admin announcements
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.spam = Spam
