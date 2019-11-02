@@ -2,32 +2,23 @@
 package acme.entities.noncommercial_banners;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.URL;
 
-import acme.framework.entities.DomainEntity;
+import acme.entities.banners.Banner;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Noncommercial_banner extends DomainEntity {
+public class Noncommercial_banner extends Banner {
 
 	// Serialisation identifier
-	private static final long	serialVersionUID	= 1L;
+	private static final long serialVersionUID = 1L;
 
 	// Atributos
-	@URL
-	private String				picture;
-
-	@NotBlank
-	private String				slogan;
 
 	@URL
-	private String				url;
-
-	@URL
-	private String				jingle;
+	private String jingle;
 }

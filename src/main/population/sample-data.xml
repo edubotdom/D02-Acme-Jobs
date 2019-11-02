@@ -159,7 +159,7 @@
 	</bean>
 	
 	<!-- Acme_offer's beans-->
-<bean id="acme_offer01" class="acme.entities.acme_offers.Acme_offer">
+	<bean id="acme_offer01" class="acme.entities.acme_offers.Acme_offer">
 		<property name="ticker" value="OAAAA-00000"/>
 		<property name="title" value="Sample offer 01"/>
 		<property name="moment" value="2019/06/10 10:35"/>
