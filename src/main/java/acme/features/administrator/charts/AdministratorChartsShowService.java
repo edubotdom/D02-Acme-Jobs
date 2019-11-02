@@ -41,19 +41,18 @@ public class AdministratorChartsShowService implements AbstractShowService<Admin
 		assert request != null;
 
 		Chart result = new Chart();
-		Map<Long, String> numCompBySector = new HashMap<Long, String>();
+		Map<String, Long> numCompBySector = new HashMap<String, Long>();
 		Collection<Object[]> a = this.repository.getNumCompBySector();
 		for (Object[] ob : a) {
-			numCompBySector.put((Long) ob[0], (String) ob[1]);
+			numCompBySector.put((String) ob[1], (Long) ob[0]);
 		}
-		System.out.println(numCompBySector.size());
 
 		result.setNumCompBySector(numCompBySector);
 
-		Map<Long, String> numInvestorBySector = new HashMap<Long, String>();
+		Map<String, Long> numInvestorBySector = new HashMap<String, Long>();
 		Collection<Object[]> b = this.repository.getNumInvestorBySector();
 		for (Object[] ob : b) {
-			numInvestorBySector.put((Long) ob[0], (String) ob[1]);
+			numInvestorBySector.put((String) ob[1], (Long) ob[0]);
 		}
 		result.setNumInvestorBySector(numInvestorBySector);
 		return result;

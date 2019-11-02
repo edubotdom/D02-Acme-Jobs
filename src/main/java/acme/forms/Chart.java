@@ -13,7 +13,7 @@ public class Chart implements Serializable {
 
 	private static final long	serialVersionUID	= 1L;
 
-	Map<Long, String>			numCompBySector;
-	Map<Long, String>			numInvestorBySector;
+	Map<String, Long>			numCompBySector;
+	Map<String, Long>			numInvestorBySector;
 
 }
