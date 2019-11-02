@@ -1,9 +1,9 @@
 
 package acme.features.administrator.charts;
 
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,7 +33,9 @@ public class AdministratorChartsShowService implements AbstractShowService<Admin
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "numCompBySector", "numInvestorBySector");
+		//		request.unbind(entity, model, "numCompBySector", "numInvestorBySector");
+		request.unbind(entity, model, "sectorComp", "numComp", "sectorInv", "numInv");
+
 	}
 
 	@Override
@@ -41,20 +43,36 @@ public class AdministratorChartsShowService implements AbstractShowService<Admin
 		assert request != null;
 
 		Chart result = new Chart();
-		Map<String, Long> numCompBySector = new HashMap<String, Long>();
+
+		//		Map<String, Long> numCompBySector = new HashMap<String, Long>();
+		List<String> sectorComp = new ArrayList<>();
+		List<Long> numComp = new ArrayList<>();
+
 		Collection<Object[]> a = this.repository.getNumCompBySector();
 		for (Object[] ob : a) {
-			numCompBySector.put((String) ob[1], (Long) ob[0]);
+			//			numCompBySector.put((String) ob[1], (Long) ob[0]);
+			sectorComp.add((String) ob[1]);
+			numComp.add((Long) ob[0]);
 		}
+		//		result.setNumCompBySector(numCompBySector);
+		result.setSectorComp(sectorComp);
+		result.setNumComp(numComp);
 
-		result.setNumCompBySector(numCompBySector);
+		//		Map<String, Long> numInvestorBySector = new HashMap<String, Long>();
 
-		Map<String, Long> numInvestorBySector = new HashMap<String, Long>();
+		List<String> sectorInv = new ArrayList<>();
+		List<Long> numInv = new ArrayList<>();
+
 		Collection<Object[]> b = this.repository.getNumInvestorBySector();
 		for (Object[] ob : b) {
-			numInvestorBySector.put((String) ob[1], (Long) ob[0]);
+			//			numInvestorBySector.put((String) ob[1], (Long) ob[0]);
+			sectorInv.add((String) ob[1]);
+			numInv.add((Long) ob[0]);
 		}
-		result.setNumInvestorBySector(numInvestorBySector);
+		//		result.setNumInvestorBySector(numInvestorBySector);
+		result.setSectorInv(sectorInv);
+		result.setNumInv(numInv);
+
 		return result;
 	}
 

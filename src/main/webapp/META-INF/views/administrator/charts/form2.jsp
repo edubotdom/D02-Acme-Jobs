@@ -25,9 +25,6 @@
 	     <div class="chart">
 	       <canvas id="chart1" width="400" height="400"></canvas>
 	     </div>
-	     <div class="chart">
-	       <canvas id="chart2" width="400" height="400"></canvas>
-	     </div>
 	   </div>
 	</div>
 
@@ -37,15 +34,21 @@
 	<script src="scripts/chart.js" charset="utf-8"></script>
 	<script src="scripts/init.js" charset="utf-8"></script>
 	<script type="text/javascript">
-		var chart1;
-		var chart2;
-		var ctx1 = document.getElementById('chart1');
-		var ctx2 = document.getElementById('chart2');
+		var compEt = new Array();
+		<c:forEach items="${sectorComp}" var="item">
+    		compEt.push(${item});
+		</c:forEach>
 	
-		var año = 2019;
-		var datos = [3,5,1,6], etiquetas = ["comida","electrodomesticos","b","c"];
+		var compData = new Array();
+		<c:forEach items="${numComp}" var="item">
+			compData.push(${item});
+		</c:forEach>
+		
+		var chartComp;
+		var ctComp = document.getElementById('chart1');
 	
-		chart1 = construyeGrafica(ctx1, 300, 300, "bar", datos, etiquetas, "Empresas por sector");
-		chart2 = construyeGrafica(ctx2, 300, 300, "line", datos, etiquetas, "Empresas por sector");
+		//var datos = [3,5,1,6], etiquetas = ["comida","electrodomesticos","b","c"];
+	
+		chartComp = construyeGrafica(ctComp, 300, 300, "bar", compData, compEt, "Empresas por sector");
 	</script>
 
