@@ -7,14 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.forms.Chart;
+import acme.forms.Charts;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Administrator;
 
 @Controller
 @RequestMapping("/administrator/charts/")
-public class AdministratorChartsController extends AbstractController<Administrator, Chart> {
+public class AdministratorChartsController extends AbstractController<Administrator, Charts> {
 
 	@Autowired
 	private AdministratorChartsShowService showService;

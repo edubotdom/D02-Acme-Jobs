@@ -14,8 +14,8 @@ function grafica(ctx, tipo, datos, etiquetas ,titulo){
           },
 	        ticks: {
             suggestedMin: 0,//este es importante
-            /*suggestedMax: 10,
-						stepSize: 50,*/
+            /*suggestedMax: 10,*/
+						stepSize: 1,
 	        }
         }],
         xAxes: [{

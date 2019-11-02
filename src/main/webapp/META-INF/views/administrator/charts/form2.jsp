@@ -31,8 +31,7 @@
   	<acme:form-return code="administrator.charts.form.button.return"/>
 </acme:form>
 
-	<script src="scripts/chart.js" charset="utf-8"></script>
-	<script src="scripts/init.js" charset="utf-8"></script>
+	<script src="libraries/acme/js/chart.js" charset="utf-8"></script>
 	<script type="text/javascript">
 		var compEt = new Array();
 		<c:forEach items="${sectorComp}" var="item">

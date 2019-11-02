@@ -8,27 +8,27 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.forms.Chart;
+import acme.forms.Charts;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AdministratorChartsShowService implements AbstractShowService<Administrator, Chart> {
+public class AdministratorChartsShowService implements AbstractShowService<Administrator, Charts> {
 
 	@Autowired
 	private AdministratorChartsRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Chart> request) {
+	public boolean authorise(final Request<Charts> request) {
 		assert request != null;
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Chart> request, final Chart entity, final Model model) {
+	public void unbind(final Request<Charts> request, final Charts entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -39,10 +39,10 @@ public class AdministratorChartsShowService implements AbstractShowService<Admin
 	}
 
 	@Override
-	public Chart findOne(final Request<Chart> request) {
+	public Charts findOne(final Request<Charts> request) {
 		assert request != null;
 
-		Chart result = new Chart();
+		Charts result = new Charts();
 
 		//		Map<String, Long> numCompBySector = new HashMap<String, Long>();
 		List<String> sectorComp = new ArrayList<>();
