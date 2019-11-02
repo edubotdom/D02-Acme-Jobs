@@ -11,7 +11,6 @@
 --%>
 
 <%@page language="java"%>
-<%@page import="java.util.List"%>
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
@@ -22,14 +21,12 @@
 
 <acme:form readonly="true">
 	<div class="graficas">
-	   <div>
 	     <div class="chart">
-	       <canvas id="chart1" width="400" height="400"></canvas>
+	       <canvas id="chart1" ></canvas>
 	     </div>
 	     <div class="chart">
-	       <canvas id="chart2" width="400" height="400"></canvas>
+	       <canvas id="chart2" ></canvas>
 	     </div>
-	   </div>
 	</div>
 
   	<acme:form-return code="administrator.charts.form.button.return"/>
@@ -63,7 +60,7 @@
 		var ctInversor = document.getElementById('chart2');
 
 		
-		var chartComp = construyeGrafica(ctCompany, 300, 300, "bar", companyData, companyEtiquetes, "Nº empresas por sector");
-		var chartInv = construyeGrafica(ctInversor, 300, 300, "bar", inversorData, inversorEtiquetes, "Nº inversores por sector");
+		var chartComp = construyeGrafica(ctCompany, 400, 400, "bar", companyData, companyEtiquetes, "Nº empresas por sector");
+		var chartInv = construyeGrafica(ctInversor, 400, 400, "bar", inversorData, inversorEtiquetes, "Nº inversores por sector");
 	</script>
 

@@ -39,6 +39,7 @@
 			<!--Top company records-->
 			<acme:menu-suboption code="master.menu.anonymous.top_company_records" action="/anonymous/top_company_records/list" access="isAnonymous()"/>
 		</acme:menu-option>
+		
 		<!--Authenticated's Selector-->
 		<acme:menu-option code="master.menu.selector.authenticated" access="isAuthenticated()">
 			<!-- Requests & offers -->
@@ -53,12 +54,17 @@
 			<!--Company records-->
 			<acme:menu-suboption code="master.menu.authenticated.company_records" action="/authenticated/company_records/list" access="isAuthenticated()"/>
 		</acme:menu-option>
+		
 		<!--Administrator's Selector-->
 			<acme:menu-option code="master.menu.selector.administrator" access="hasRole('Administrator')">
 			<!-- Announcements -->
 			<acme:menu-suboption code="master.menu.administrator.announcements" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
 			<!-- Spam -->
 			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list" access="hasRole('Administrator')"/>
+			<!-- Charts -->
+			<acme:menu-suboption code="master.menu.administrator.charts" action="/administrator/charts/show" access="hasRole('Administrator')"/>
+			<!-- Dashboard -->
+			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" access="hasRole('Administrator')"/>
 		</acme:menu-option>
     
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

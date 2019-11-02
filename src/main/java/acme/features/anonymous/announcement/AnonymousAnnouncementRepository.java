@@ -27,7 +27,7 @@ public interface AnonymousAnnouncementRepository extends AbstractRepository {
 	Announcement findOneById(int id);
 
 	//@Query("select a from Announcement a")
-	@Query("select a from Announcement a where current_timestamp() - a.moment < 30000000")
+	@Query("select a from Announcement a where TIMESTAMPDIFF(MONTH,a.moment,current_timestamp())<1")
 	Collection<Announcement> findManyAll();
 
 }

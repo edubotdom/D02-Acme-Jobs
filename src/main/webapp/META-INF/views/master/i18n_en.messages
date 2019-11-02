@@ -62,6 +62,8 @@ master.menu.administrator.announcements = Admin announcements
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.spam = Spam
+master.menu.administrator.dashboard = Dashboard panel
+master.menu.administrator.charts = Administration charts
 
 # master.menu.provider ########################################################
 
