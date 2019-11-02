@@ -220,14 +220,14 @@
 	
 	<bean id="investor_record02" class="acme.entities.investor_records.Investor_record">
 		<property name="name" value="Juanogtir"/>
-		<property name="sector" value="Social Networking"/>
+		<property name="sector" value="Aerospace"/>
 		<property name="investing_statement" value="Esto es una declaración de inversión de Juanogtir"/>
 		<property name="stars" value="0"/>
 	</bean>
 	
 	<bean id="investor_record03" class="acme.entities.investor_records.Investor_record">
 		<property name="name" value="Danaremar"/>
-		<property name="sector" value="Software Libre"/>
+		<property name="sector" value="Food"/>
 		<property name="investing_statement" value="Esto es una declaración de inversión de Danaremar"/>
 		<property name="stars"> <null/></property>
   	</bean>
@@ -239,6 +239,18 @@
 		<property name="stars" value="5"/>
 	</bean>
 
+	<bean id="investor_record05" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Pepe"/>
+		<property name="sector" value="Food"/>
+		<property name="investing_statement" value="Esto es una declaración de inversión de Pepe"/>
+		<property name="stars" value="4"/>
+  	</bean>
+	<bean id="investor_record06" class="acme.entities.investor_records.Investor_record">
+		<property name="name" value="Pudgi"/>
+		<property name="sector" value="Food"/>
+		<property name="investing_statement" value="Esto es una declaración de inversión de Pudgi"/>
+		<property name="stars" value="5"/>
+  	</bean>
 	<!-- Company record's beans-->
 	<bean id="company_records01" class="acme.entities.company_records.Company_records">
 		<property name="company_name" value="Space X, Inc."/>
