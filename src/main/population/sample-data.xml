@@ -92,7 +92,7 @@
 
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01"/>
-		<property name="moment" value="2019/10/10 10:35"/>
+		<property name="moment" value="2019/11/02 10:35"/>
 		<property name="moreInfo"><null/></property>
 		<property name="text" value="This is a description of a sample announcement"/>
 	</bean>
