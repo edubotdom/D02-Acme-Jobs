@@ -212,17 +212,17 @@
 <!-- Investor record's beans-->
 
 	<bean id="investor_record01" class="acme.entities.investor_records.Investor_record">
-		<property name="name" value="Edu Mig"/>
+		<property name="name" value="Jules Bianchi"/>
 		<property name="sector" value="Automoción"/>
-		<property name="investing_statement" value="Esto es una declaración de inversión de Edu Mig"/>
-		<property name="stars" value="3"/>
+		<property name="investing_statement" value="Esto es una declaración de inversión de Jules Bianchi"/>
+		<property name="stars" value="3.8"/>
 	</bean>
 	
 	<bean id="investor_record02" class="acme.entities.investor_records.Investor_record">
 		<property name="name" value="Juanogtir"/>
 		<property name="sector" value="Aerospace"/>
 		<property name="investing_statement" value="Esto es una declaración de inversión de Juanogtir"/>
-		<property name="stars" value="0"/>
+		<property name="stars" value="0.5"/>
 	</bean>
 	
 	<bean id="investor_record03" class="acme.entities.investor_records.Investor_record">
@@ -233,9 +233,9 @@
   	</bean>
   
   	<bean id="investor_record04" class="acme.entities.investor_records.Investor_record">
-		<property name="name" value="Lenny Tavarez"/>
-		<property name="sector" value="Music"/>
-		<property name="investing_statement" value="Esto es una declaración de inversión de Lenny Tavarez"/>
+		<property name="name" value="María de Villota"/>
+		<property name="sector" value="Automoción"/>
+		<property name="investing_statement" value="Esto es una declaración de inversión de María de Villota"/>
 		<property name="stars" value="5"/>
 	</bean>
 
@@ -246,9 +246,9 @@
 		<property name="stars" value="4.4"/>
   	</bean>
 	<bean id="investor_record06" class="acme.entities.investor_records.Investor_record">
-		<property name="name" value="Pudgi"/>
-		<property name="sector" value="Food"/>
-		<property name="investing_statement" value="Esto es una declaración de inversión de Pudgi"/>
+		<property name="name" value="Roberto Merhi"/>
+		<property name="sector" value="Aerospace"/>
+		<property name="investing_statement" value="Esto es una declaración de inversión de Roberto Merhi."/>
 		<property name="stars" value="5"/>
   	</bean>
 	<!-- Company record's beans-->
