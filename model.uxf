@@ -330,7 +330,7 @@ activities: String{NotBlank}
 website: String{NotBlank}
 contact_phone: {NotBlank}{Pattern="[+][0-9]{3}[ ][(][0-9]{4}[)][ ][0-9]{6,10}"}
 contact_email: String{Email}
-stars: Double{Range: min=1,max=5}{Digits: integer=1,fraction=1}</panel_attributes>
+stars: Double{Range: min=0,max=5}{Digits: integer=1,fraction=1}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -425,7 +425,7 @@ Investor_record
 + name: String {NotBlank}
 + sector: String {NotBlank}
 + investing_statement: String {NotBlank}
-+ stars: Integer {Range 0-5}</panel_attributes>
++ stars: Double {Range: min=0,max=5}{Digits: integer=1,fraction=1}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
