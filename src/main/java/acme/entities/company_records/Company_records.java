@@ -45,7 +45,7 @@ public class Company_records extends DomainEntity {
 	@Email
 	private String				contact_email;
 
-	@Range(min = 1, max = 5, message = "The stars must be in range 1 to 5")
+	@Range(min = 0, max = 5, message = "The stars must be in range 0 to 5")
 	@Digits(integer = 1, fraction = 1, message = "Stars must contain only one integer and one decimal number")
 	private Double				stars;
 
