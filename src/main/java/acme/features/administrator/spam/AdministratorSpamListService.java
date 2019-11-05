@@ -30,7 +30,7 @@ public class AdministratorSpamListService implements AbstractListService<Adminis
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "spam_words", "spam_threshold", "lang");
+		request.unbind(entity, model, "spamWords", "spamThreshold", "lang");
 	}
 
 	@Override

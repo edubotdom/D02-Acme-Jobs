@@ -8,6 +8,6 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.spam.list.label.spam_words = Palabras Spam
-administrator.spam.list.label.spam_threshold = Límite de Spam
+administrator.spam.list.label.spamWords = Palabras Spam
+administrator.spam.list.label.spamThreshold = Límite de Spam
 administrator.spam.list.label.lang = Idioma

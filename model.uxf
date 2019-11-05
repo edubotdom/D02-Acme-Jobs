@@ -362,7 +362,7 @@ Announcement
 Offer
 --
 + ticker: String {Unique, NotBlank, Length(11, 11))}{Pattern="^O[A-Z]{4}-[0-9]{5}$"}
-+ title:String {NotBlank}
++ title: String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past}
 + deadline: Date {Temporal(TIMESTAMP)}
 + text: String {NotBlank}

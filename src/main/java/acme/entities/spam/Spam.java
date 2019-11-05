@@ -19,11 +19,11 @@ public class Spam extends DomainEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
-	private String				spam_words;
+	private String				spamWords;
 
 	@NotNull
 	@Range(min = 0, max = 100, message = "spam_threshold is a percentage, number must be in range 0-100")
-	private Double				spam_threshold;
+	private Double				spamThreshold;
 
 	@NotBlank
 	private String				lang;

@@ -76,26 +76,26 @@
 <!-- Spam's beans-->
 
 	<bean id="spam01" class="acme.entities.spam.Spam">
-		<property name="spam_words" value="sex,hardcore,viagra,cialis,nigeria,you've won,million dollar"/>
-		<property name="spam_threshold" value="1.0"/>
+		<property name="spamWords" value="sex,hardcore,viagra,cialis,nigeria,you've won,million dollar"/>
+		<property name="spamThreshold" value="1.0"/>
 		<property name="lang" value="en"/>
 	</bean>
 	
 	<bean id="spam02" class="acme.entities.spam.Spam">
-		<property name="spam_words" value="SEX,HARDCORE,VIAGRA,CIALIS,NIGERIA,YOU'VE WON,MILLION DOLLAR"/>
-		<property name="spam_threshold" value="1.0"/>
+		<property name="spamWords" value="SEX,HARDCORE,VIAGRA,CIALIS,NIGERIA,YOU'VE WON,MILLION DOLLAR"/>
+		<property name="spamThreshold" value="1.0"/>
 		<property name="lang" value="en"/>
 	</bean>
 	
 	<bean id="spam03" class="acme.entities.spam.Spam">
-		<property name="spam_words" value="sexo,duro,viagra,cialis,nigeria,has ganado,millón de euros"/>
-		<property name="spam_threshold" value="1.0"/>
+		<property name="spamWords" value="sexo,duro,viagra,cialis,nigeria,has ganado,millón de euros"/>
+		<property name="spamThreshold" value="1.0"/>
 		<property name="lang" value="es"/>
 	</bean>
 	
 	<bean id="spam04" class="acme.entities.spam.Spam">
-		<property name="spam_words" value="SEXO,DURO,VIAGRA,CIALIS,NIGERIA,HAS GANADO,MILLÓN DE EUROS"/>
-		<property name="spam_threshold" value="1.0"/>
+		<property name="spamWords" value="SEXO,DURO,VIAGRA,CIALIS,NIGERIA,HAS GANADO,MILLÓN DE EUROS"/>
+		<property name="spamThreshold" value="1.0"/>
 		<property name="lang" value="es"/>
 	</bean>
 	
