@@ -18,6 +18,7 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
+		<!-- 
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.juanogtir-favourite-link" action="https://www.marca.com/"/>
@@ -26,33 +27,33 @@
 			<acme:menu-suboption code="master.menu.anonymous.danaremar-favourite-link" action="https://www.minecraft.net/"/>
 			<acme:menu-suboption code="master.menu.anonymous.seraguoro-favourite-link" action="https://www.youtube.com/watch?v=73GI6uS_4Ic"/>
 		</acme:menu-option>
-		
+		 -->
 		<!--Anonymous's Selector-->
 		<acme:menu-option code="master.menu.selector.anonymous" access="isAnonymous()">
 			<!-- Investor records -->
-			<acme:menu-suboption code="master.menu.anonymous.investor_record" action="/anonymous/investor_record/list" access="isAnonymous()" />
-			<acme:menu-suboption code="master.menu.anonymous.top_investor_record" action="/anonymous/top_investor_record/list" access="isAnonymous()" />
+			<acme:menu-suboption code="master.menu.anonymous.investor" action="/anonymous/investor/list" access="isAnonymous()" />
+			<acme:menu-suboption code="master.menu.anonymous.top_investors" action="/anonymous/top_investors/list" access="isAnonymous()" />
 			<!-- Announcements -->
 			<acme:menu-suboption code="master.menu.anonymous.announcements" action="/anonymous/announcement/list" access="isAnonymous()"/>
 			<!--Company records-->
-			<acme:menu-suboption code="master.menu.anonymous.company_records" action="/anonymous/company_records/list" access="isAnonymous()"/>
+			<acme:menu-suboption code="master.menu.anonymous.companies" action="/anonymous/company/list" access="isAnonymous()"/>
 			<!--Top company records-->
-			<acme:menu-suboption code="master.menu.anonymous.top_company_records" action="/anonymous/top_company_records/list" access="isAnonymous()"/>
+			<acme:menu-suboption code="master.menu.anonymous.top_companies" action="/anonymous/top_company/list" access="isAnonymous()"/>
 		</acme:menu-option>
 		
 		<!--Authenticated's Selector-->
 		<acme:menu-option code="master.menu.selector.authenticated" access="isAuthenticated()">
 			<!-- Requests & offers -->
-		    <acme:menu-suboption code="master.menu.authenticated.acme_request" action="/authenticated/acme_request/list" access="isAuthenticated()" />
-			<acme:menu-suboption code="master.menu.authenticated.acme_offer" action="/authenticated/acme_offer/list" access="isAuthenticated()" />
+		    <acme:menu-suboption code="master.menu.authenticated.solicitud" action="/authenticated/solicitud/list" access="isAuthenticated()" />
+			<acme:menu-suboption code="master.menu.authenticated.offer" action="/authenticated/offer/list" access="isAuthenticated()" />
 			<!-- Investor records -->
-			<acme:menu-suboption code="master.menu.authenticated.investor_record" action="/authenticated/investor_record/list" access="isAuthenticated()"/>
+			<acme:menu-suboption code="master.menu.authenticated.investor" action="/authenticated/investor/list" access="isAuthenticated()"/>
 			<!--Challenge-->
 			<acme:menu-suboption code="master.menu.authenticated.challenge" action="/authenticated/challenge/list" access="isAuthenticated()"/>		
 			<!-- Announcements -->
 			<acme:menu-suboption code="master.menu.authenticated.announcements" action="/authenticated/announcement/list" access="isAuthenticated()"/>
 			<!--Company records-->
-			<acme:menu-suboption code="master.menu.authenticated.company_records" action="/authenticated/company_records/list" access="isAuthenticated()"/>
+			<acme:menu-suboption code="master.menu.authenticated.companies" action="/authenticated/company/list" access="isAuthenticated()"/>
 		</acme:menu-option>
 		
 		<!--Administrator's Selector-->
