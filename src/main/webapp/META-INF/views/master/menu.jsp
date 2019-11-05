@@ -61,8 +61,6 @@
 			<acme:menu-suboption code="master.menu.administrator.announcements" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
 			<!-- Spam -->
 			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list" access="hasRole('Administrator')"/>
-			<!-- Charts -->
-			<acme:menu-suboption code="master.menu.administrator.charts" action="/administrator/charts/show" access="hasRole('Administrator')"/>
 			<!-- Dashboard -->
 			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" access="hasRole('Administrator')"/>
 		</acme:menu-option>

@@ -213,7 +213,7 @@
 
 	<bean id="investor_record01" class="acme.entities.investor_records.Investor_record">
 		<property name="name" value="Jules Bianchi"/>
-		<property name="sector" value="Automoción"/>
+		<property name="sector" value="Software"/>
 		<property name="investing_statement" value="Esto es una declaración de inversión de Jules Bianchi"/>
 		<property name="stars" value="3.8"/>
 	</bean>
@@ -234,7 +234,7 @@
   
   	<bean id="investor_record04" class="acme.entities.investor_records.Investor_record">
 		<property name="name" value="María de Villota"/>
-		<property name="sector" value="Automoción"/>
+		<property name="sector" value="Automotive"/>
 		<property name="investing_statement" value="Esto es una declaración de inversión de María de Villota"/>
 		<property name="stars" value="5"/>
 	</bean>
@@ -298,7 +298,7 @@
 	
 	<bean id="company_records05" class="acme.entities.company_records.Company_records">
 		<property name="company_name" value="Wan's Company Inc."/>
-		<property name="sector" value="Skepticism"/>
+		<property name="sector" value="Software"/>
 		<property name="ceo_name" value="Er wan"/>
 		<property name="activities" value="Makes people happier"/>
 		<property name="website" value="http://www.wan.com/"/>

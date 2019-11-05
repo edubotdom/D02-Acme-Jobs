@@ -2,6 +2,7 @@
 package acme.forms;
 
 import java.io.Serializable;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -29,6 +30,13 @@ public class Dashboard implements Serializable {
 	Double						maximumOffer;
 	Double						averageOffer;
 	Double						standardDesviationOffer;
+
+	// Chart atts.
+	List<String>				companySectors;
+	List<Long>					numberCompanys; //nº companys per sector
+
+	List<String>				investorSectors;
+	List<Long>					numberInvestors; //nº investors per sector
 
 	// Derived attributes -------------------------------------------------
 

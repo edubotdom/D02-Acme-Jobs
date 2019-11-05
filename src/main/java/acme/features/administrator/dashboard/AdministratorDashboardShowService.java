@@ -1,6 +1,10 @@
 
 package acme.features.administrator.dashboard;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,7 +38,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert model != null;
 
 		request.unbind(entity, model, "totalNumberOfAnnouncements", "totalNumberOfCompanyRecords", "totalNumberOfInvestorRecords", "minimumReward", "maximumReward", "averageReward", "standardDesviationReward", "minimumOffer", "maximumOffer",
-			"averageOffer", "standardDesviationOffer");
+			"averageOffer", "standardDesviationOffer", "companySectors", "numberCompanys", "investorSectors", "numberInvestors");
 	}
 
 	@Override
@@ -56,6 +60,32 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setMaximumOffer(this.repository.maximumOffer());
 		result.setAverageOffer(this.repository.averageOffer());
 		result.setStandardDesviationOffer(this.repository.standardDesviationOffer());
+
+		//		Chart's atts
+
+		List<String> sectorComp = new ArrayList<>();
+		List<Long> numComp = new ArrayList<>();
+
+		Collection<Object[]> a = this.repository.getNumCompBySector();
+		for (Object[] ob : a) {
+			sectorComp.add((String) ob[1]);
+			numComp.add((Long) ob[0]);
+		}
+
+		result.setCompanySectors(sectorComp);
+		result.setNumberCompanys(numComp);
+
+		List<String> sectorInv = new ArrayList<>();
+		List<Long> numInv = new ArrayList<>();
+
+		Collection<Object[]> b = this.repository.getNumInvestorBySector();
+		for (Object[] ob : b) {
+			sectorInv.add((String) ob[1]);
+			numInv.add((Long) ob[0]);
+		}
+
+		result.setInvestorSectors(sectorInv);
+		result.setNumberInvestors(numInv);
 
 		return result;
 	}
