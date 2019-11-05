@@ -15,6 +15,10 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
+<link rel="stylesheet" href="libraries/acme/css/chart.css"/>
+
+<script type="text/javascript" src="libraries/chart.js/2.7.2/js/chart.min.js"></script>
+
 <acme:form readonly="true">
 	<acme:form-integer code="administrator.dashboard.form.label.totalNumberOfAnnouncements" path="totalNumberOfAnnouncements"/>
 	<acme:form-integer code="administrator.dashboard.form.label.totalNumberOfCompanyRecords" path="totalNumberOfCompanyRecords"/>
@@ -37,5 +41,49 @@
 		<acme:form-double code="administrator.dashboard.form.label.standardDesviationOffer" path="standardDesviationOffer"/>
 	</acme:form-panel>
 	
+	<div class="graficas">
+	     <div class="chart">
+	       <canvas id="chart1" ></canvas>
+	     </div>
+	</div>
+	
+	
   	<acme:form-return code="administrator.dashboard.form.button.return"/>
 </acme:form>
+
+
+	<script src="libraries/acme/js/chart.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	
+		var companyEtiquetes = new Array();
+		<jstl:forEach items="${companySectors}" var="item">
+			companyEtiquetes.push("${item}");
+		</jstl:forEach>
+	
+		var companyData = new Array();	
+		<jstl:forEach items="${numberCompanys}" var="item">
+			companyData.push(${item});
+		</jstl:forEach>
+	
+		var inversorEtiquetes = new Array();
+		<jstl:forEach items="${investorSectors}" var="item">
+			inversorEtiquetes.push("${item}");
+		</jstl:forEach>
+	
+		var inversorData = new Array();	
+		<jstl:forEach items="${numberInvestors}" var="item">
+			inversorData.push(${item});
+		</jstl:forEach>
+		
+		
+		var ctx = document.getElementById('chart1');	
+
+		var data = [companyData, inversorData];
+		var ets = [companyEtiquetes, inversorEtiquetes];
+		var labels = ["Empresas","Inversores"];
+		console.log(data);
+		console.log(ets);
+		var chart = construyeGrafica(ctx, "bar", data,ets,labels, "Empresas/Inversores por sector",[false,false]);
+
+	</script>
+
