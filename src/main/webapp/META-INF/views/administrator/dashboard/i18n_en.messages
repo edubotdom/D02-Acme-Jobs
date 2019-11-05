@@ -27,4 +27,7 @@ administrator.dashboard.form.label.maximumOffer = Maximum offer:
 administrator.dashboard.form.label.averageOffer = Average offer:
 administrator.dashboard.form.label.standardDesviationOffer = Standard desviation offer:
 
+administrator.dashboard.form.label.chartTitle = Companys/Inversors per sector
+
+
 administrator.dashboard.form.button.return = Return

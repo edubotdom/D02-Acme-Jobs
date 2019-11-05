@@ -43,6 +43,7 @@
 	
 	<div class="graficas">
 	     <div class="chart">
+	       <acme:form-label code="administrator.dashboard.form.label.chartTitle" path="chartTitle"/>
 	       <canvas id="chart1" ></canvas>
 	     </div>
 	</div>
@@ -81,9 +82,11 @@
 		var data = [companyData, inversorData];
 		var ets = [companyEtiquetes, inversorEtiquetes];
 		var labels = ["Empresas","Inversores"];
-		console.log(data);
-		console.log(ets);
-		var chart = construyeGrafica(ctx, "bar", data,ets,labels, "Empresas/Inversores por sector",[false,false]);
+		var title = "Empresas/Inversores por sector";
+		
+		//console.log(data);
+		//console.log(ets);
+		var chart = construyeGrafica(ctx, "bar", data,ets,labels, "",[false,false]);
 
 	</script>
 

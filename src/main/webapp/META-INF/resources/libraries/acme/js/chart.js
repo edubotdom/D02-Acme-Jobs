@@ -48,7 +48,7 @@ function grafica(ctx, tipo, dataY, dataX, labels, titulo, yStacked, xStacked){
         enabled:false
       },
 			title:{
-				display:true,
+				display:false,
 				text:titulo,
 				fontSize: 20
 			},
