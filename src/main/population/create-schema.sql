@@ -1,32 +1,4 @@
 
-    create table `acme_offer` (
-       `id` integer not null,
-        `version` integer not null,
-        `deadline` datetime(6),
-        `max_amount` double precision,
-        `max_currency` varchar(255),
-        `min_amount` double precision,
-        `min_currency` varchar(255),
-        `moment` datetime(6),
-        `text` varchar(255),
-        `ticker` varchar(255),
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `acme_request` (
-       `id` integer not null,
-        `version` integer not null,
-        `deadline` datetime(6),
-        `moment` datetime(6),
-        `reward_amount` double precision,
-        `reward_currency` varchar(255),
-        `text` varchar(255),
-        `ticker` varchar(255),
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -95,17 +67,17 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `company_records` (
+    create table `company` (
        `id` integer not null,
         `version` integer not null,
         `activities` varchar(255),
-        `ceo_name` varchar(255),
-        `company_name` varchar(255),
-        `contact_email` varchar(255),
-        `contact_phone` varchar(255),
+        `ceo` varchar(255),
+        `email` varchar(255),
+        `name` varchar(255),
+        `phone` varchar(255),
         `sector` varchar(255),
         `stars` double precision,
-        `website` varchar(255),
+        `url` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -118,23 +90,38 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `investor_record` (
+    create table `investor` (
        `id` integer not null,
         `version` integer not null,
-        `investing_statement` varchar(255),
         `name` varchar(255),
         `sector` varchar(255),
         `stars` double precision,
+        `statement` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `noncommercial_banner` (
+    create table `non_commercial_banner` (
        `id` integer not null,
         `version` integer not null,
         `picture` varchar(255),
         `slogan` varchar(255),
         `url` varchar(255),
         `jingle` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `offer` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `max_amount` double precision,
+        `max_currency` varchar(255),
+        `min_amount` double precision,
+        `min_currency` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -153,6 +140,19 @@
         `author` varchar(255),
         `moment` datetime(6),
         `text` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `solicitud` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `moment` datetime(6),
+        `reward_amount` double precision,
+        `reward_currency` varchar(255),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -183,11 +183,11 @@
 
     insert into `hibernate_sequence` values ( 1 );
 
-    alter table `acme_offer` 
-       add constraint UK_1n1ec8cnfoqp9g8a7mucil9od unique (`ticker`);
+    alter table `offer` 
+       add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
 
-    alter table `acme_request` 
-       add constraint UK_oycxhvu32i3mjhwooe9yvt62c unique (`ticker`);
+    alter table `solicitud` 
+       add constraint UK_rea5aivw0b4fiu93s509u9lky unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);

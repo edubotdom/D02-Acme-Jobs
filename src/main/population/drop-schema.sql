@@ -19,10 +19,6 @@
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
 
-    drop table if exists `acme_offer`;
-
-    drop table if exists `acme_request`;
-
     drop table if exists `administrator`;
 
     drop table if exists `announcement`;
@@ -37,17 +33,21 @@
 
     drop table if exists `commercial_banner`;
 
-    drop table if exists `company_records`;
+    drop table if exists `company`;
 
     drop table if exists `consumer`;
 
-    drop table if exists `investor_record`;
+    drop table if exists `investor`;
 
-    drop table if exists `noncommercial_banner`;
+    drop table if exists `non_commercial_banner`;
+
+    drop table if exists `offer`;
 
     drop table if exists `provider`;
 
     drop table if exists `shout`;
+
+    drop table if exists `solicitud`;
 
     drop table if exists `spam`;
 

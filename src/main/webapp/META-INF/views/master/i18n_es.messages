@@ -42,18 +42,18 @@ master.menu.anonymous.danaremar-favourite-link = Enlace favorito de danaremar
 master.menu.anonymous.seraguoro-favourite-link = Enlace favorito de seraguoro
 
 master.menu.anonymous.announcements = Anuncios
-master.menu.anonymous.company_records = Registro de empresas
-master.menu.anonymous.investor_record = Registro de inversores
-master.menu.anonymous.top_company_records = Mejores empresas
-master.menu.anonymous.top_investor_record = Mejores inversores
+master.menu.anonymous.companies = Registro de empresas
+master.menu.anonymous.investor = Registro de inversores
+master.menu.anonymous.top_companies = Mejores empresas
+master.menu.anonymous.top_investors = Mejores inversores
 
 # master.menu.authenticated #######################################################
-master.menu.authenticated.acme_offer = Ofertas
-master.menu.authenticated.acme_request = Peticiones
+master.menu.authenticated.offer = Ofertas
+master.menu.authenticated.solicitud = Peticiones
 master.menu.authenticated.announcements = Anuncios
 master.menu.authenticated.challenge = Listar retos
-master.menu.authenticated.company_records = Registro de empresas
-master.menu.authenticated.investor_record = Registros de inversores
+master.menu.authenticated.companies = Registro de empresas
+master.menu.authenticated.investor = Registros de inversores
 
 # master.menu.administrator ###################################################
 
