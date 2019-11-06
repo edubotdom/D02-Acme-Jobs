@@ -19,12 +19,14 @@ public class Banner extends DomainEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	// Atributos
+	@NotBlank
 	@URL
 	private String				picture;
 
 	@NotBlank
 	private String				slogan;
 
+	@NotBlank
 	@URL
 	private String				url;
 }
